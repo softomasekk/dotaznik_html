@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rozvrh hodín</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      margin: 30px;
+      color: #000000;
+    }
+
+    h1 {
+      text-align: center;
+      color: #000000;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      font-size: 18px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      border: 1px solid #000000;
+      padding: 12px;
+    }
+
+    th {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    tr:nth-child(even) {
+      background-color: #000000;
+    }
+
+    td:first-child {
+      font-weight: bold;
+      background-color: #ffffff;
+      color: #000000;
+    }
+    .mat { background-color: #D1B2A1; }  
+.nej { background-color: #E3D0B1; }  
+.anj { background-color: #A9B9C9; }  
+.sjl { background-color: #A9D4B0; }  
+.dej { background-color: #F1D0D4; }  
+.geo { background-color: #C8A8E2; }   
+.bio { background-color: #A3D4C3; }  
+.che { background-color: #F4D4E4; }  
+.fyz { background-color: #A1D1DF; }  
+.obn { background-color: #F1D7A2; }   
+.inf { background-color: #D4D4D4; }  
+.tsv { background-color: #F0A9A9; }  
+.sei { background-color: #B4A9D0; }  
+.empty { background-color: #F4F4F4; }
+
+      td:not(.empty):hover {
+      filter: brightness(105%);
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rozvrh hodín</h1>
+  <table>
+    <tr>
+      <th>Hodina</th>
+      <th>Pondelok</th>
+      <th>Utorok</th>
+      <th>Streda</th>
+      <th>Štvrtok</th>
+      <th>Piatok</th>
+    </tr>
+    <tr>
+      <td>1.</td>
+      <td class="mat">MAT</td>
+      <td class="anj">ANJ</td>
+      <td class="geo">GEO</td>
+      <td class="sjl">SJL</td>
+      <td class="bio">BIO</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td class="nej">NEJ</td>
+      <td class="sjl">SJL</td>
+      <td class="mat">MAT</td>
+      <td class="che">CHE</td>
+      <td class="fyz">FYZ</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td class="dej">DEJ</td>
+      <td class="inf">INF</td>
+      <td class="anj">ANJ</td>
+      <td class="mat">MAT</td>
+      <td class="tsv">TSV</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td class="sjl">SJL</td>
+      <td class="bio">BIO</td>
+      <td class="sei">SEI</td>
+      <td class="nej">NEJ</td>
+      <td class="empty"></td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td class="fyz">FYZ</td>
+      <td class="che">CHE</td>
+      <td class="dej">DEJ</td>
+      <td class="inf">INF</td>
+      <td class="empty"></td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td class="empty"></td>
+      <td class="tsv">TSV</td>
+      <td class="empty"></td>
+      <td class="obn">OBN</td>
+      <td class="empty"></td>
+    </tr>
+  </table>
+</body>
+</html>
+

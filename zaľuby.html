@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Záľuby</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #f4f4f4, #e1e1e1);
+      margin: 40px;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      color: #4a4a4a;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .filmy, .hudba, .image-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .film, .item, .image-row div {
+      text-align: center;
+      max-width: 220px;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .film:hover, .item:hover, .image-row div:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .film img, .item img, .image-row img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .film img {
+      height: 300px;
+    }
+
+    .item img {
+      height: 200px;
+    }
+
+    .image-row img {
+      height: 224px;
+    }
+
+    .image-row img, .item img, .film img {
+      transition: transform 0.3s;
+    }
+
+    .image-row img:hover, .item img:hover, .film img:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 24px;
+      color: #2f2f2f;
+    }
+
+    h3 {
+      font-size: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Moje Záľuby</h1>
+
+  <h2>Pozeranie filmov - moje obľúbené filmy</h2>
+  <div class="filmy">
+    <div class="film">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/68/Seven_%28movie%29_poster.jpg" alt="Seven">
+      <h3>Seven</h3>
+    </div>
+    <div class="film">
+      <img src="https://lasttimeisawdotcom.wordpress.com/wp-content/uploads/2014/01/christiane-f-poster.jpg?w=871" alt="Christiane F.">
+      <h3>Christiane F. – My, deti zo stanice ZOO</h3>
+    </div>
+    <div class="film">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/American_Psycho.png" alt="American Psycho">
+      <h3>American Psycho</h3>
+    </div>
+  </div>
+
+  <h2>Počúvanie hudby - moje obľúbené skupiny/interpreti</h2>
+  <div class="hudba">
+    <div class="item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt0ssG80QhUseyI0o4ymoXfdcO_-GutDLiJw&s" alt="Lady Gaga">
+      <h3>Lady Gaga</h3>
+    </div>
+    <div class="item">
+      <img src="https://cdn-images.dzcdn.net/images/cover/a9d9bda18a953e9ae74e2af5d3d45610/0x1900-000000-80-0-0.jpg" alt="The Neighbourhood">
+      <h3>The Neighbourhood</h3>
+    </div>
+    <div class="item">
+      <img src="https://images.genius.com/0cb9261245c9401fc53f82791e7b3b06.1000x1000x1.png" alt="Fleetwood Mac">
+      <h3>Fleetwood Mac</h3>
+    </div>
+    <div class="item">
+      <img src="https://muzikercdn.com/uploads/products/5811/581173/eb91d4c8.jpg" alt="Amy Winehouse">
+      <h3>Amy Winehouse</h3>
+    </div>
+  </div>
+
+  <h2>DJing</h2>
+  <div class="image-row">
+    <div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuGgz5xDEl54Yntiinx4DZ5qtYCyaDzEXWRANUPnyPFLs5QADunV5sEvtmv-vTT6SlMzw&usqp=CAU" alt="Holy Priest">
+    </div>
+    <div>
+      <img src="https://cdn.prod.website-files.com/5abf6872d0f264292bfb1c2d/5b0286b08f4f83b39f3ead89_equipmentmain.jpg" alt="DJ Equipment">
+    </div>
+    <div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2ddz5cMmEKpDyRjN-5gCr91e6UPAunuDPsyghj5VP6BcU5TleopzAMNHnrZpnXJk3vxI&usqp=CAU" alt="Peggy Gou">
+    </div>
+  </div>
+
+  <h2>Arkády</h2>
+  <div class="image-row">
+    <div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlizjkw2lyre-jWh6RYCu_bha5UOg_YDFXDw&s" alt="arkady1">
+    </div>
+    <div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSooG4asrxsXquc-AzGzvDc_klU36HaUoXPKQ&s" alt="arkady2">
+    </div>
+  </div>
+
+  <h2>Cestovanie</h2>
+  <div class="image-row">
+    <div>
+      <h3>New York</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/960px-New_york_times_square-terabass.jpg" alt="New York">
+    </div>
+    <div>
+      <h3>Miami</h3>
+      <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/471000/471674-Miami.jpg" alt="Miami">
+    </div>
+    <div>
+      <h3>Berlín</h3>
+      <img src="https://cdn.forbes.sk/uploads/2020/01/stefan-widua-berlin-b%C3%BDvanie-n%C3%A1jomn%C3%A9-forbes-e1580390361538.webp?r=eyJ3IjoyMDQ4LCJxIjo5MCwicyI6ImpwZyJ9" alt="Berlín">
+    </div>
+  </div>
+</body>
+</html>
+ 
